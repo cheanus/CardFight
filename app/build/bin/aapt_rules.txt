@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:35
+-keep class com.qianxia.cardfight.GameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.qianxia.cardfight.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class com.qianxia.cardfight.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.qianxia.cardfight.ReferenceActivity { <init>(...); }
+

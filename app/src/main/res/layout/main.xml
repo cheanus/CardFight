@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<TextView
+		android:text="CARD FIGHT"
+		android:textSize="45sp"
+		android:gravity="center"
+		android:layout_width="350dp"
+		android:layout_height="150dp"
+		android:layout_marginBottom="20dp"/>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="开始游戏"
+		android:layout_margin="20dp"
+		android:textSize="20sp"
+		android:id="@+id/main_button_start"/>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="帮助"
+		android:layout_margin="20dp"
+		android:textSize="20sp"
+		android:id="@+id/main_button_help"/>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="关于"
+		android:layout_margin="20dp"
+		android:textSize="20sp"
+		android:id="@+id/main_button_reference"/>
+
+</LinearLayout>
+

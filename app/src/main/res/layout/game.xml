@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFF8E6BA">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="血量"
+			android:textColor="#FFD92222"
+			android:textSize="25sp"/>
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:height="25dp"
+			android:layout_weight="1.0"
+			android:max="20"
+			android:id="@+id/lifebar"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="20"
+			android:textColor="#FFD92222"
+			android:textSize="25sp"
+			android:id="@+id/lifevalue"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="5.0">
+
+		<ImageView
+			android:layout_centerInParent="true"
+			android:id="@+id/center"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+		<ImageView
+			android:layout_height="150dp"
+			android:layout_width="100dp"
+			android:text="Button"
+			android:src="@drawable/ic_launcher"
+			android:id="@+id/card1"
+			android:layout_toLeftOf="@id/center"
+			android:layout_above="@id/center"/>
+
+		<ImageView
+			android:layout_height="150dp"
+			android:layout_width="100dp"
+			android:text="Button"
+			android:src="@drawable/ic_launcher"
+			android:id="@+id/card2"
+			android:layout_above="@id/center"
+			android:layout_toRightOf="@id/center"/>
+
+		<ImageView
+			android:layout_height="150dp"
+			android:layout_width="100dp"
+			android:text="Button"
+			android:src="@drawable/ic_launcher"
+			android:id="@+id/card3"
+			android:layout_below="@id/center"
+			android:layout_toLeftOf="@id/center"/>
+
+		<ImageView
+			android:layout_height="150dp"
+			android:layout_width="100dp"
+			android:text="Button"
+			android:src="@drawable/ic_launcher"
+			android:id="@+id/card4"
+			android:layout_below="@id/center"
+			android:layout_toRightOf="@id/center"/>
+
+		<ImageView
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:layout_height="86dp"
+			android:layout_width="37dp"
+			android:src="@drawable/rightarrow"
+			android:id="@+id/right"/>
+
+		<ImageView
+			android:layout_alignParentLeft="true"
+			android:layout_centerInParent="true"
+			android:src="@drawable/leftarrow"
+			android:layout_height="86dp"
+			android:layout_width="37dp"
+			android:id="@+id/left"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="跳"
+			android:textSize="30sp"
+			android:layout_above="@id/left"
+			android:layout_alignParentLeft="true"
+			android:textColor="#FFF95050"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="进"
+			android:textSize="30sp"
+			android:layout_above="@id/right"
+			android:layout_alignParentRight="true"
+			android:textColor="#FF08AC1D"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="1.4">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="武器"
+			android:textColor="#FF2FA9EF"
+			android:textSize="25sp"
+			android:layout_marginTop="5dp"
+			android:id="@+id/gameTextView1"
+			android:layout_marginLeft="22dp"/>
+
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="60dp"
+			android:layout_toRightOf="@id/gameTextView1"
+			android:id="@+id/weaponcard"
+			android:layout_marginLeft="19dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="0"
+			android:layout_below="@id/gameTextView1"
+			android:textSize="33sp"
+			android:id="@+id/weaponvalue"
+			android:layout_marginLeft="34dp"
+			android:textColor="#FF5E6FEB"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="重新开始"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:textSize="20sp"
+			android:id="@+id/restart"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
